@@ -3,9 +3,7 @@
 <div>
     <p align="center">
     <em>
-        (Coloque aqui uma pequena descrição sobre seu Projeto)<br>
-        (Place a short description of your Project here)<br><br>
-        Construction of a Personal Blog using Angular, a project developed at Generation's Bootcamp with the aim of learning.
+        Chanllenge Bten Front End - Dashboard Kit 
     </em>
     </p>
 </div>
@@ -14,8 +12,9 @@
 
  <p align="center">
     <em>
-        (Coloque aqui as Funcionalidades do seu Projeto)<br>
-        (Place the Features of your project here)<br>
+        - Tela de Login<br>
+        - Tela de Cadastro (opção caso o usuário não tenha login)<br>
+        - Tela de Dashboard com gráficos em tela logada (dados mockados)<br>
     </em>
  </p>
 
@@ -24,34 +23,14 @@
 
 ## 👓Revised Concepts
 
- <p align="center">
-    <em>
-        (Você pode colocar alguns conceitos usados no seu Projeto que esteja revisando ou que acha importante destacar)<br>
-        (You can put some concepts used in your Project that you are reviewing or that you think is important to highlight)<br>
-    </em>
- </p>
-
 - Angular Componentization
 - Use of Routes
-- API consumption
-- Posts, Themes and User CRUD
-- Custom Alerts, Sorting, Searching and Admin Role
-- Control of Logged Users
-- Documentation with Compodoc
 ## 📕Installation
-
-<p align="center">
-    <em>
-        (Explique como uma pessoa desenvolvedora pode estar fazendo a instalação do seu Projeto em outra máquina. Aqui cabe a você, e também as especificações do seu projeto, como explicar a forma de instalação)<br><br>
-        (Explain how another developer might be installing your Project on their machine. Here it's up to you, and also the specifications of your project, how to explain how to install it)<br>
-    </em>
-</p>
 
 **You must have already installed**
 - [Node.js](https://nodejs.org/en/)
 - [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 - [Angular](https://angular.io/guide/setup-local)
-- [MySQL](https://dev.mysql.com/downloads/)
 
 **Recommendations**
 -   It is recommended that you have installed Google Chrome or Edge
@@ -76,22 +55,9 @@ or
 yarn
 ```
 
-*Make sure your internet is stable, as this may take a while* 
-
-### 3. Initializing the BackEnd
-
-If you have a ***BackEnd local***, start it before the Angular Project
-
-If you have a ***Hosted BackEnd***, you'll need configure the Routes and Models of Angular Project with your BackEnd 
+*Certifique-se de que sua internet está estavel, esse processo pode levar uns minutos* 
 
 ## 🎮Getting Started
-
-<p align="center">
-    <em>
-        (Após a instalação, aqui você explica como outra pessoa desenvolvedora pode estar iniciando o seu Projeto. Aqui cabe a você, e também as especificações do seu projeto, como explicar a forma de inicialização)<br><br>
-        (After installation, here you explain how another developer can be starting your Project. Here it's up to you, and also the specifications of your project, how to explain how to start)<br>
-    </em>
-</p>
 
 1. Run the backend or configure as explained above 
 
@@ -103,32 +69,11 @@ ng serve
 
 ## 🌐Technologies
 
-<p align="center">
-    <em>
-        (Liste as tecnologias usadas no seu Projeto)<br>
-        (List the technologies used in your Project)<br>
-    </em>
-</p>
-
 - [AngularJS](https://angular.io/)
 - [TypeScript](https://www.typescriptlang.org/)
-
-## 📝License
-
-<p align="center">
-    <em>
-        Chanllenge Bten Front End - Dashboard Kit <br><br>
-     <br>
-    </em>
-</p>
-
-Released in 2021.
+- [Angular Material](https://material.angular.io/)
+- [Bootstrap v4 Grid System](https://getbootstrap.com/docs/4.0/layout/grid/)
 
 ##  Links
 
-<p align="center">
-    <em>
-        <br>
-        <br>
-    </em>
-</p>
+- [Versão publicada](https://bten-teste.herokuapp.com/)
