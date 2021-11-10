@@ -14,7 +14,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,11 +30,16 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatListModule,
     MatToolbarModule,
     MatGridListModule,
     MatButtonModule,
-    NgxChartsModule
+    NgxChartsModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule 
   ],
   providers: [
     SigninService

@@ -1,1 +1,37 @@
-<p>signin works!</p>
+<div class="login-body">
+    <form [formGroup]="formlogin" class="login-box" (ngSubmit)="submit()">
+        <div class="logo-holder">
+            <img class="logo" src="../../../assets/img/logo.png" >
+            Dashboard Kit
+        </div>
+        <div class="input-holder">
+            <mat-form-field appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input matInput formControlName="nome">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>E-mail</mat-label>
+                <input matInput formControlName="login">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Senha</mat-label>
+                <input matInput formControlName="senha" [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Confirmação de senha</mat-label>
+                <input matInput formControlName="senha2" [type]="hide2 ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide2 password'"
+                    [attr.aria-pressed]="hide2">
+                    <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary" class="mb-2">Criar conta</button>
+            ou 
+            <button mat-button color="primary" class="mb-2" [routerLink]="['/login']">Voltar</button>
+        </div>
+    </form>
+</div>
