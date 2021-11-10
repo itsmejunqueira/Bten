@@ -18,13 +18,11 @@
     </em>
  </p>
 
-- Creation, Editing and Deletion of Posts, Themes and User.
-- Admin Roles
-
 ## 👓Revised Concepts
 
 - Angular Componentization
 - Use of Routes
+
 ## 📕Installation
 
 **You must have already installed**
