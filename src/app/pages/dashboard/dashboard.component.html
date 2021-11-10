@@ -1,1 +1,174 @@
-<p>dashboard works!</p>
+<mat-drawer-container class="example-container">
+    <mat-drawer  #drawer [(opened)]="desktopMode" mode="side" class="sidebar" style="position: absolute;">
+        <div class="logo">
+            <img alt="logo" src="../../../assets/img/logo.png">
+            <span>
+                Dashboard Kit
+            </span>
+        </div>
+        <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64" class="sidebar">
+            <mat-nav-list class="nav-list">
+                <a mat-list-item routerLink="/">
+                    <i class="icon-overview">
+                    </i>
+                    <span class="menu-text">Overview </span>
+                </a>
+                <a mat-list-item routerLink="/login">
+                    <i class="icon-tickets">
+                    </i>
+                    <span class="menu-text"> Tickets</span>
+                </a>
+                <a mat-list-item routerLink="/signin">
+                    <i class="icon-ideas">
+                    </i>
+                    <span class="menu-text">Ideas</span>
+                </a>
+                <a mat-list-item routerLink="/teachers">
+                    <i class="icon-contacts">
+                    </i>
+                    <span class="menu-text">Contacts</span>
+                </a>
+                <a mat-list-item routerLink="/teachers">
+                    <i class="icon-agents">
+
+                    </i>
+                    <span class="menu-text">Agents</span>
+                </a>
+                <a mat-list-item routerLink="/teachers">
+                    <i class="icon-articles">
+                    </i>
+                    <span class="menu-text"> Articles</span>
+                </a>
+            </mat-nav-list>
+
+            <mat-nav-list class="nav-list-two">
+                <a mat-list-item routerLink="/">
+                    <i class="icon-settings">
+                    </i>
+                    <span class="menu-text"> Settings</span>
+                </a>
+                <a mat-list-item routerLink="/">
+                    <i class="icon-subs">
+                    </i>
+                    <span class="menu-text">Subscription</span>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+    </mat-drawer>
+    <mat-drawer-content class="body">
+            <div class="row w-100 pt-1 d-flex align-content-center">
+                <div class="col-md-7 d-flex align-content-center">
+                    <button mat-icon-button aria-label="" (click)="drawer.toggle()">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <span class="teste">Overview</span>
+                </div>
+                <div class="tools-holder col-sm-12 col-md-5" *ngIf="desktopMode">
+                    <button mat-icon-button aria-label="">
+                        <i class="icon-search"></i>
+                    </button>
+                    <button mat-icon-button aria-label="">
+                        <i class="icon-notifications"></i>
+                    </button>
+                    <span class="v-divider"></span>
+                    <div class="user">
+                        <span> Jones Ferdinand</span>
+                        <div class="avatar">
+                            <img src="../../../assets/img/SPOILER_avatar.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row counter-holder pt-2">
+            <div class="col-sm-12 col-md-3" *ngFor="let item of counters">
+                <div class="rounded-card">
+                    <div class="card-title">
+                        {{item.name}}
+                    </div>
+                    <div class="card-body">
+                        {{item.value}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trends-holder">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 charts-holder">
+                    <div class="chart-data">
+                        <div class="chart-title">
+                            Todays trends
+                            <div class="chart-text">
+                                as of 25 May 2019, 09:41 PM
+                                <div class="chart-legend">
+                                    <div class="blue"></div>
+                                    <span>Today</span>
+                                    <div class="gray"></div>
+                                    <span>Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-100 p-0 m-0 justify-content-center">
+                        <div class="col-sm-12 col-md-11">
+                            <ngx-charts-line-chart [scheme]="colorScheme" [legend]="legend"
+                                [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis"
+                                [yAxis]="yAxis" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel"
+                                [timeline]="timeline" [results]="multi" (select)="onSelect($event)"
+                                (activate)="onActivate($event)" [curve]="curve" [xScaleMin]="xScaleMin"
+                                [xScaleMax]="xScaleMax" [yScaleMin]="yScaleMin" [yScaleMax]="yScaleMax"
+                                [maxYAxisTickLength]="maxYAxisTickLength" [customColors]="customColors"
+                                (deactivate)="onDeactivate($event)">
+                            </ngx-charts-line-chart>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="!desktopMode" class="mt-5 w-100"></div>
+                <div class="col-sm-12 col-md-4 side-counter-holder">
+                    <div class="l-border b-border side-counter">
+                        <div class="card-title2">
+                            Resolved
+                        </div>
+                        <div class="card-body2">
+                            449
+                        </div>
+                    </div>
+                    <div class="l-border b-border side-counter">
+                        <div class="card-title2">
+                            Received
+                        </div>
+                        <div class="card-body2">
+                            429
+                        </div>
+                    </div>
+                    <div class="l-border b-border side-counter">
+                        <div class="card-title2">
+                            Average first response time
+                        </div>
+                        <div class="card-body2">
+                            33m
+                        </div>
+                    </div>
+                    <div class="l-border b-border side-counter">
+                        <div class="card-title2">
+                            Average response time
+                        </div>
+                        <div class="card-body2">
+                            3h 8m
+                        </div>
+                    </div>
+                    <div class="l-border side-counter">
+                        <div class="card-title2">
+                            Revolution within SLA
+                        </div>
+                        <div class="card-body2">
+                            94%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </mat-drawer-content>
+</mat-drawer-container>
