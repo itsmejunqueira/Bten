@@ -4,11 +4,11 @@
     <p align="center">
     <em>
         Chanllenge Bten Front End - Dashboard Kit 
+
+</div>
+
 - [Versão publicada](https://bten-teste.herokuapp.com/)
 
-    </em>
-    </p>
-</div>
 
 ## 🚀Features
 
