@@ -4,6 +4,8 @@
     <p align="center">
     <em>
         Chanllenge Bten Front End - Dashboard Kit 
+- [Versão publicada](https://bten-teste.herokuapp.com/)
+
     </em>
     </p>
 </div>
@@ -71,7 +73,3 @@ ng serve
 - [TypeScript](https://www.typescriptlang.org/)
 - [Angular Material](https://material.angular.io/)
 - [Bootstrap v4 Grid System](https://getbootstrap.com/docs/4.0/layout/grid/)
-
-##  Links
-
-- [Versão publicada](https://bten-teste.herokuapp.com/)
