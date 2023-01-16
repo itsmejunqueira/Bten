@@ -43,7 +43,7 @@
   ---
 ### 1. Clone this repository
 ```
-git clone https://github.com/Yuri-stack/BlogPessoalGen.git
+git clonehttps://github.com/itsmejunqueira/Bten.git
 ```
 ---
 ### 2. Install the dependencies
