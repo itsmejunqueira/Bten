@@ -7,23 +7,47 @@
 
 </div>
 
-- [Versão publicada](https://bten-teste.herokuapp.com/)
+- [Versão publicada](https://itsmejunqueira.github.io/Dashboard-Kit/)
+  <br>
+  Utilize o Login: eve.holt@reqres.in Senha: pistol
 
 
 ## 🚀Features
 
- <p align="center">
+ <p>
     <em>
-        - Tela de Login<br>
-        - Tela de Cadastro (opção caso o usuário não tenha login)<br>
-        - Tela de Dashboard com gráficos em tela logada (dados mockados)<br>
+        - Tela de Login 
+      <br>
+        - Tela de Cadastro (opção caso o usuário não tenha login)        
+      <br>  
+      - Tela de Dashboard com gráficos em tela logada (dados mockados)
     </em>
  </p>
+## 🌐Technologies
 
-## 👓Revised Concepts
+<div>
+   <a href="#">
+        <img src="https://img.shields.io/static/v1?label=Language&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Language: Typescript">
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/static/v1?label=Language&message=Javascript&color=yellow&style=for-the-badge&logo=JavaScript" alt="Language: Javascript">
+    </a>
+   <a href="#">
+        <img src="https://img.shields.io/static/v1?label=Language&message=SASS&color=ff69b4&style=for-the-badge&logo=SASS" alt="Language: SASS">
+    </a>
+  <br>
+    <a  href="#">
+      <img  src="https://img.shields.io/static/v1?label=Framework&message=Angular 15&color=e23237&style=for-the-badge&logo=Angular"  alt="Language: Angular"> 
+    </a>
+    <a href="#">
+      <img  src="https://img.shields.io/static/v1?label=framework&message=Bootstrap&color=563d7c&style=for-the-badge&logo=Bootstrap"  alt="Language: Bootstrap">
+    </a>
+      <a  href="#">
+      <img  src="https://img.shields.io/static/v1?label=Design&message=Angular material&color=e23237&style=for-the-badge&logo=Angular"  alt="Language: Angular"> 
+    </a>
+    <br>
+</div>
 
-- Angular Componentization
-- Use of Routes
 
 ## 📕Installation
 
@@ -67,9 +91,4 @@ ng serve
 ```
 3. Now, open your browser and navigate to: http://localhost:4200
 
-## 🌐Technologies
 
-- [AngularJS](https://angular.io/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Angular Material](https://material.angular.io/)
-- [Bootstrap v4 Grid System](https://getbootstrap.com/docs/4.0/layout/grid/)
