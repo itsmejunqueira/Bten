@@ -4,9 +4,11 @@
     <p align="center">
     <em>
         Chanllenge Bten Front End - Dashboard Kit 
-    </em>
-    </p>
+
 </div>
+
+- [Versão publicada](https://bten-teste.herokuapp.com/)
+
 
 ## 🚀Features
 
@@ -18,13 +20,11 @@
     </em>
  </p>
 
-- Creation, Editing and Deletion of Posts, Themes and User.
-- Admin Roles
-
 ## 👓Revised Concepts
 
 - Angular Componentization
 - Use of Routes
+
 ## 📕Installation
 
 **You must have already installed**
@@ -43,7 +43,7 @@
   ---
 ### 1. Clone this repository
 ```
-git clone https://github.com/Yuri-stack/BlogPessoalGen.git
+git clonehttps://github.com/itsmejunqueira/Bten.git
 ```
 ---
 ### 2. Install the dependencies
@@ -73,7 +73,3 @@ ng serve
 - [TypeScript](https://www.typescriptlang.org/)
 - [Angular Material](https://material.angular.io/)
 - [Bootstrap v4 Grid System](https://getbootstrap.com/docs/4.0/layout/grid/)
-
-##  Links
-
-- [Versão publicada](https://bten-teste.herokuapp.com/)
